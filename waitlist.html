@@ -7,79 +7,82 @@
 <meta name="description" content="3-6 yaş için İngilizce öğrenme uygulaması. 16 ünite, 130 kelime, şarkılar ve hikâyeler. Reklamsız, çevrimdışı, veri toplamaz. Çıktığında ilk siz haberdar olun.">
 <meta property="og:title" content="Tobi — Çocuğunuz İngilizce'yi oyunla öğrensin">
 <meta property="og:description" content="16 ünite, 130 kelime, şarkılar ve hikâyeler. Reklamsız ve çevrimdışı. Çıkışta haber verelim.">
+<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/shot-home.webp">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#FDF4DC">
+<link rel="icon" href="tobi.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --cream: #FDF4DC;
+    --cream-deep: #F7E9C8;
     --teal: #2BAE8F;
     --teal-dark: #1F8A70;
     --sun: #FFC94D;
     --coral: #FF8A66;
     --ink: #24333B;
     --ink-soft: #5A6B75;
+    --card: #FFFDF7;
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     margin: 0;
     background: var(--cream);
     color: var(--ink);
     font-family: "Baloo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
 
-  header { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
-  header img { width: 56px; height: 56px; }
-  header span { font-size: 1.5rem; font-weight: 700; }
+  /* ---------- header ---------- */
+  header { padding: 26px 0 8px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 48px; height: 48px; }
+  .brand span { font-size: 1.4rem; font-weight: 700; letter-spacing: .2px; }
 
-  .hero { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; }
-  .hero-art { flex: 0 0 260px; max-width: 100%; }
+  /* ---------- hero ---------- */
+  .hero { padding: 26px 0 44px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+  .hero-copy { flex: 1 1 340px; min-width: 290px; }
+  .hero-art { flex: 0 0 240px; max-width: 60%; margin: 0 auto; }
   .hero-art img { width: 100%; height: auto; display: block; }
-  .hero-text { flex: 1 1 320px; min-width: 280px; }
 
-  h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.15; margin: 0 0 14px; }
+  .eyebrow {
+    display: inline-block;
+    background: var(--sun);
+    border: 2.5px solid var(--ink);
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: .88rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  h1 { font-size: clamp(2rem, 5.4vw, 2.9rem); line-height: 1.12; margin: 0 0 14px; letter-spacing: -.5px; }
   h1 em { color: var(--teal); font-style: normal; }
-  .lede { font-size: 1.15rem; color: var(--ink-soft); margin: 0 0 26px; }
+  .lede { font-size: 1.14rem; color: var(--ink-soft); margin: 0 0 24px; max-width: 34ch; }
 
-  ul.points { list-style: none; padding: 0; margin: 0 0 30px; }
-  ul.points li { padding: 5px 0 5px 30px; position: relative; font-size: 1.02rem; }
-  ul.points li::before {
-    content: "";
-    position: absolute; left: 0; top: 13px;
-    width: 16px; height: 16px; border-radius: 50%;
-    background: var(--teal);
-  }
-
-  .card {
-    background: #fff;
-    border: 3px solid var(--ink);
-    border-radius: 26px;
-    padding: 26px;
-    box-shadow: 0 6px 0 var(--ink);
-    margin-top: 8px;
-  }
-  .card h2 { margin: 0 0 6px; font-size: 1.3rem; }
-  .card p { margin: 0 0 18px; color: var(--ink-soft); }
-
-  form { display: flex; gap: 12px; flex-wrap: wrap; }
+  /* ---------- form ---------- */
+  .signup { margin-top: 4px; }
+  form { display: flex; gap: 10px; flex-wrap: wrap; }
   input[type="email"] {
-    flex: 1 1 240px;
+    flex: 1 1 220px;
     font-family: inherit;
-    font-size: 1.05rem;
+    font-size: 1.04rem;
     padding: 14px 16px;
     border: 3px solid var(--ink);
     border-radius: 16px;
-    background: var(--cream);
+    background: var(--card);
     color: var(--ink);
     min-width: 0;
   }
-  input[type="email"]:focus { outline: 3px solid var(--sun); outline-offset: 2px; }
+  input[type="email"]::placeholder { color: #9AA7AE; }
+  input[type="email"]:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
   button {
     font-family: inherit;
-    font-size: 1.05rem;
+    font-size: 1.04rem;
     font-weight: 700;
     color: #fff;
     background: var(--teal);
@@ -88,60 +91,200 @@
     box-shadow: 0 5px 0 var(--teal-dark);
     padding: 14px 26px;
     cursor: pointer;
+    white-space: nowrap;
   }
+  button:hover { background: var(--teal-dark); }
   button:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--teal-dark); }
-  .fineprint { font-size: 0.9rem; color: var(--ink-soft); margin: 16px 0 0; }
+  button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .fineprint { font-size: .88rem; color: var(--ink-soft); margin: 12px 0 0; }
+
+  /* Teşekkür durumu: JS varsa gösterilir, yoksa hiç görünmez. */
+  .thanks {
+    display: none;
+    background: var(--teal);
+    color: #fff;
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    padding: 16px 18px;
+    font-weight: 600;
+    box-shadow: 0 5px 0 var(--teal-dark);
+  }
+  .signup.done form, .signup.done .fineprint { display: none; }
+  .signup.done .thanks { display: block; }
+  .err { color: #B4442B; font-weight: 600; margin: 10px 0 0; display: none; }
+  .signup.failed .err { display: block; }
+
+  /* ---------- şeritler ---------- */
+  .band { background: var(--cream-deep); border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 46px 0; }
+  h2 { font-size: clamp(1.45rem, 3.6vw, 1.9rem); margin: 0 0 8px; }
+  .sub { color: var(--ink-soft); margin: 0 0 30px; }
+
+  .shots { display: grid; gap: 26px; grid-template-columns: 1fr; }
+  @media (min-width: 760px) { .shots { grid-template-columns: repeat(3, 1fr); } }
+  figure { margin: 0; }
+  figure img {
+    width: 100%; height: auto; display: block;
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    background: var(--card);
+  }
+  figcaption { margin-top: 10px; font-weight: 600; }
+  figcaption small { display: block; font-weight: 500; color: var(--ink-soft); }
+
+  /* ---------- güven ---------- */
+  .trust { padding: 46px 0; }
+  .grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
+  @media (min-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  .item {
+    background: var(--card);
+    border: 3px solid var(--ink);
+    border-radius: 20px;
+    padding: 18px 20px;
+    box-shadow: 0 5px 0 rgba(36,51,59,.16);
+  }
+  .item h3 { margin: 0 0 4px; font-size: 1.06rem; }
+  .item p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
+
+  /* ---------- kapanış ---------- */
+  .closing { padding: 8px 0 52px; text-align: center; }
+  .closing form { justify-content: center; }
+  .closing .lede { margin-left: auto; margin-right: auto; }
 
   footer {
-    margin-top: 48px; padding-top: 20px;
-    border-top: 2px solid rgba(36,51,59,.15);
-    font-size: 0.92rem; color: var(--ink-soft);
-    display: flex; gap: 18px; flex-wrap: wrap;
+    border-top: 2px solid rgba(36,51,59,.16);
+    padding: 20px 0 40px;
+    font-size: .92rem; color: var(--ink-soft);
+    display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
   }
   footer a { color: var(--ink-soft); }
 </style>
 </head>
 <body>
-<div class="wrap">
 
+<div class="wrap">
   <header>
-    <img src="tobi.png" alt="">
-    <span>Tobi</span>
+    <div class="brand"><img src="tobi.png" alt=""><span>Tobi</span></div>
   </header>
 
-  <div class="hero">
-    <div class="hero-art">
-      <img src="tobi.png" alt="Tobi, yeşil dinozor maskot">
-    </div>
-    <div class="hero-text">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">3-6 yaş · yakında yayında</span>
       <h1>Çocuğunuz İngilizce'yi <em>oyunla</em> öğrensin</h1>
-      <p class="lede">3-6 yaş için hazırlandı. Ekran başında geçen zaman, öğrenilen kelimeye dönüşsün.</p>
-      <ul class="points">
-        <li>16 ünite, 130 kelime — resimli kartlar ve oyunlar</li>
-        <li>16 şarkı ve 2 hikâye, hepsi seslendirilmiş</li>
-        <li>Reklam yok, çevrimdışı çalışır, veri toplamaz</li>
-        <li>Ebeveyn paneli: günlük süre limiti ve haftalık ilerleme</li>
-      </ul>
+      <p class="lede">Ekran başında geçen zaman, öğrenilen kelimeye dönüşsün. Reklamsız, çevrimdışı, veri toplamayan bir uygulama.</p>
+
+      <div class="signup" id="signup-top">
+        <form action="https://formspree.io/f/mnpqnbbk" method="POST">
+          <input type="email" name="email" placeholder="e-posta adresiniz" required aria-label="E-posta adresiniz">
+          <input type="hidden" name="_subject" value="Tobi waitlist kaydı">
+          <button type="submit">Çıkınca Haber Ver</button>
+        </form>
+        <p class="fineprint">Tek bir çıkış duyurusu. Başka mail yok, kimseyle paylaşmıyoruz.</p>
+        <p class="err" role="alert">Kayıt gönderilemedi. Bağlantınızı kontrol edip tekrar deneyin.</p>
+        <div class="thanks" role="status">Listeye eklendiniz! Tobi yayına girdiği gün haber vereceğiz.</div>
+      </div>
+    </div>
+    <div class="hero-art"><img src="tobi.png" alt="Tobi, el sallayan yeşil dinozor maskot"></div>
+  </section>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Uygulamanın içi</h2>
+    <p class="sub">16 ünite, 130 kelime, 16 şarkı ve 2 hikâye — hepsi seslendirilmiş.</p>
+    <div class="shots">
+      <figure>
+        <img src="shot-home.webp" alt="Tobi ana ekranı: renkli ünite kartları ve maskot" loading="lazy" width="1100" height="506">
+        <figcaption>Ünite ünite ilerler<small>Her ünite kendi patikası: kartlar, oyunlar, şarkı</small></figcaption>
+      </figure>
+      <figure>
+        <img src="shot-song.webp" alt="Şarkı ekranı: kelimeler söylenirken sırayla parlıyor" loading="lazy" width="1100" height="506">
+        <figcaption>Şarkıyla pekişir<small>Kelime söylenirken ekranda parlar</small></figcaption>
+      </figure>
+      <figure>
+        <img src="shot-panel.webp" alt="Ebeveyn paneli: haftalık kelimeler, oyun süresi ve günlük limit" loading="lazy" width="1100" height="506">
+        <figcaption>Kontrol sizde<small>Günlük süre limiti ve haftalık ilerleme</small></figcaption>
+      </figure>
     </div>
   </div>
+</section>
 
-  <div class="card">
-    <h2>Çıktığında ilk siz haberdar olun</h2>
-    <p>E-postanızı bırakın, Tobi mağazalarda yayına girdiği gün haber verelim. Başka hiçbir şey göndermeyiz.</p>
-    <form action="https://formspree.io/f/mnpqnbbk" method="POST">
-      <input type="email" name="email" placeholder="e-posta adresiniz" required aria-label="E-posta adresiniz">
-      <input type="hidden" name="_subject" value="Tobi waitlist kaydı">
-      <button type="submit">Haber Ver</button>
-    </form>
-    <p class="fineprint">Adresinizi kimseyle paylaşmıyoruz; tek bir çıkış duyurusu için kullanıyoruz.</p>
+<section class="trust">
+  <div class="wrap">
+    <h2>Ebeveyn olarak merak ettikleriniz</h2>
+    <p class="sub">Çocuk uygulamalarında asıl mesele içerik kadar güven.</p>
+    <div class="grid">
+      <div class="item">
+        <h3>Reklam yok</h3>
+        <p>Hiçbir reklam, hiçbir dış bağlantı. Çocuk uygulamadan dışarı çıkamaz.</p>
+      </div>
+      <div class="item">
+        <h3>Veri toplamıyoruz</h3>
+        <p>Hesap yok, kayıt yok. İlerleme yalnızca telefonda durur.</p>
+      </div>
+      <div class="item">
+        <h3>Çevrimdışı çalışır</h3>
+        <p>Yolda, uçakta, internetsiz evde — her şey cihazın içinde.</p>
+      </div>
+      <div class="item">
+        <h3>Süre sizin elinizde</h3>
+        <p>Günlük 15, 20 veya 30 dakika. Süre bitince Tobi günü tatlılıkla kapatır.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<div class="wrap">
+  <section class="closing">
+    <h2>Çıktığında ilk siz haberdar olun</h2>
+    <p class="lede">E-postanızı bırakın, mağazalarda yayına girdiği gün tek bir mail gönderelim.</p>
+    <div class="signup" id="signup-bottom">
+      <form action="https://formspree.io/f/mnpqnbbk" method="POST">
+        <input type="email" name="email" placeholder="e-posta adresiniz" required aria-label="E-posta adresiniz">
+        <input type="hidden" name="_subject" value="Tobi waitlist kaydı">
+        <button type="submit">Çıkınca Haber Ver</button>
+      </form>
+      <p class="fineprint">Tek bir çıkış duyurusu. Başka mail yok, kimseyle paylaşmıyoruz.</p>
+      <p class="err" role="alert">Kayıt gönderilemedi. Bağlantınızı kontrol edip tekrar deneyin.</p>
+      <div class="thanks" role="status">Listeye eklendiniz! Tobi yayına girdiği gün haber vereceğiz.</div>
+    </div>
+  </section>
 
   <footer>
     <a href="index.html">Gizlilik Politikası</a>
     <a href="terms.html">Kullanım Koşulları</a>
     <span>© 2026 SuBuSoft</span>
   </footer>
-
 </div>
+
+<script>
+  // Progressive enhancement: JS kapalıyken formlar normal POST ile çalışır
+  // (Formspree'nin kendi teşekkür sayfasına gider). JS varsa sayfada kalırız.
+  document.querySelectorAll('.signup').forEach(function (box) {
+    var form = box.querySelector('form');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      box.classList.remove('failed');
+      var btn = form.querySelector('button');
+      var label = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Gönderiliyor…';
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          box.classList.add('done');
+        } else {
+          throw new Error('rejected');
+        }
+      }).catch(function () {
+        box.classList.add('failed');
+        btn.disabled = false;
+        btn.textContent = label;
+      });
+    });
+  });
+</script>
 </body>
 </html>
