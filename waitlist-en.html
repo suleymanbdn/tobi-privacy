@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tobi — Çocuğunuz İngilizce'yi oyunla öğrensin</title>
-<meta name="description" content="3-6 yaş için İngilizce öğrenme uygulaması. 16 ünite, 130 kelime, şarkılar ve hikâyeler. Reklamsız, çevrimdışı, veri toplamaz. Çıktığında ilk siz haberdar olun.">
-<meta property="og:title" content="Tobi — Çocuğunuz İngilizce'yi oyunla öğrensin">
-<meta property="og:description" content="16 ünite, 130 kelime, şarkılar ve hikâyeler. Reklamsız ve çevrimdışı. Çıkışta haber verelim.">
-<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/shot-home.webp">
+<title>Tobi — Let your child learn English through play</title>
+<meta name="description" content="An English learning app for ages 3-6. 16 units, 130 words, songs and stories. No ads, works offline, collects no data. Be the first to know when it launches.">
+<meta property="og:title" content="Tobi — Let your child learn English through play">
+<meta property="og:description" content="16 units, 130 words, songs and stories. No ads and fully offline. We'll tell you when it lands.">
+<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/shot-home-en.webp">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FDF4DC">
 <link rel="icon" href="tobi.png">
@@ -104,7 +104,7 @@
   button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
   .fineprint { font-size: .88rem; color: var(--ink-soft); margin: 12px 0 0; }
 
-  /* Teşekkür durumu: JS varsa gösterilir, yoksa hiç görünmez. */
+  /* Thank-you state: shown only when JS is available. */
   .thanks {
     display: none;
     background: var(--teal);
@@ -120,7 +120,7 @@
   .err { color: #B4442B; font-weight: 600; margin: 10px 0 0; display: none; }
   .signup.failed .err { display: block; }
 
-  /* ---------- şeritler ---------- */
+  /* ---------- bands ---------- */
   .band { background: var(--cream-deep); border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); padding: 46px 0; }
   h2 { font-size: clamp(1.45rem, 3.6vw, 1.9rem); margin: 0 0 8px; }
   .sub { color: var(--ink-soft); margin: 0 0 30px; }
@@ -137,7 +137,7 @@
   figcaption { margin-top: 10px; font-weight: 600; }
   figcaption small { display: block; font-weight: 500; color: var(--ink-soft); }
 
-  /* ---------- güven ---------- */
+  /* ---------- trust ---------- */
   .trust { padding: 46px 0; }
   .grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
   @media (min-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }
@@ -151,7 +151,7 @@
   .item h3 { margin: 0 0 4px; font-size: 1.06rem; }
   .item p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
 
-  /* ---------- kapanış ---------- */
+  /* ---------- closing ---------- */
   .closing { padding: 8px 0 52px; text-align: center; }
   .closing form { justify-content: center; }
   .closing .lede { margin-left: auto; margin-right: auto; }
@@ -170,46 +170,46 @@
 <div class="wrap">
   <header>
     <div class="brand"><img src="tobi.png" alt=""><span>Tobi</span></div>
-    <a class="lang" href="waitlist-en.html" hreflang="en">English</a>
+    <a class="lang" href="waitlist.html" hreflang="tr">Türkçe</a>
   </header>
 
   <section class="hero">
     <div class="hero-copy">
-      <span class="eyebrow">3-6 yaş · yakında yayında</span>
-      <h1>Çocuğunuz İngilizce'yi <em>oyunla</em> öğrensin</h1>
-      <p class="lede">Ekran başında geçen zaman, öğrenilen kelimeye dönüşsün. Reklamsız, çevrimdışı, veri toplamayan bir uygulama.</p>
+      <span class="eyebrow">Ages 3-6 · launching soon</span>
+      <h1>Let your child learn English <em>through play</em></h1>
+      <p class="lede">Turn screen time into words they actually keep. No ads, works offline, collects no data.</p>
 
       <div class="signup" id="signup-top">
         <form action="https://formspree.io/f/mnpqnbbk" method="POST">
-          <input type="email" name="email" placeholder="e-posta adresiniz" required aria-label="E-posta adresiniz">
-          <input type="hidden" name="_subject" value="Tobi waitlist kaydı">
-          <button type="submit">Çıkınca Haber Ver</button>
+          <input type="email" name="email" placeholder="your email address" required aria-label="Your email address">
+          <input type="hidden" name="_subject" value="Tobi waitlist signup (EN)">
+          <button type="submit">Tell Me When It's Out</button>
         </form>
-        <p class="fineprint">Tek bir çıkış duyurusu. Başka mail yok, kimseyle paylaşmıyoruz.</p>
-        <p class="err" role="alert">Kayıt gönderilemedi. Bağlantınızı kontrol edip tekrar deneyin.</p>
-        <div class="thanks" role="status">Listeye eklendiniz! Tobi yayına girdiği gün haber vereceğiz.</div>
+        <p class="fineprint">One launch email. Nothing else, and we never share your address.</p>
+        <p class="err" role="alert">That didn't go through. Check your connection and try again.</p>
+        <div class="thanks" role="status">You're on the list! We'll email you the day Tobi goes live.</div>
       </div>
     </div>
-    <div class="hero-art"><img src="tobi.png" alt="Tobi, el sallayan yeşil dinozor maskot"></div>
+    <div class="hero-art"><img src="tobi.png" alt="Tobi, a friendly green dinosaur mascot, waving"></div>
   </section>
 </div>
 
 <section class="band">
   <div class="wrap">
-    <h2>Uygulamanın içi</h2>
-    <p class="sub">16 ünite, 130 kelime, 16 şarkı ve 2 hikâye — hepsi seslendirilmiş.</p>
+    <h2>Inside the app</h2>
+    <p class="sub">16 units, 130 words, 16 songs and 2 stories — every one of them narrated.</p>
     <div class="shots">
       <figure>
-        <img src="shot-home.webp" alt="Tobi ana ekranı: renkli ünite kartları ve maskot" loading="lazy" width="1100" height="506">
-        <figcaption>Ünite ünite ilerler<small>Her ünite kendi patikası: kartlar, oyunlar, şarkı</small></figcaption>
+        <img src="shot-home-en.webp" alt="Tobi home screen with colourful unit cards and the mascot" loading="lazy" width="1100" height="506">
+        <figcaption>One unit at a time<small>Each unit is its own path: cards, games, a song</small></figcaption>
       </figure>
       <figure>
-        <img src="shot-song.webp" alt="Şarkı ekranı: kelimeler söylenirken sırayla parlıyor" loading="lazy" width="1100" height="506">
-        <figcaption>Şarkıyla pekişir<small>Kelime söylenirken ekranda parlar</small></figcaption>
+        <img src="shot-song-en.webp" alt="Song screen where each word lights up as it is sung" loading="lazy" width="1100" height="506">
+        <figcaption>Songs make it stick<small>Words light up on screen as they are sung</small></figcaption>
       </figure>
       <figure>
-        <img src="shot-panel.webp" alt="Ebeveyn paneli: haftalık kelimeler, oyun süresi ve günlük limit" loading="lazy" width="1100" height="506">
-        <figcaption>Kontrol sizde<small>Günlük süre limiti ve haftalık ilerleme</small></figcaption>
+        <img src="shot-panel-en.webp" alt="Parent dashboard showing weekly words, play time and the daily limit" loading="lazy" width="1100" height="506">
+        <figcaption>You stay in control<small>Daily time limit and weekly progress</small></figcaption>
       </figure>
     </div>
   </div>
@@ -217,24 +217,24 @@
 
 <section class="trust">
   <div class="wrap">
-    <h2>Ebeveyn olarak merak ettikleriniz</h2>
-    <p class="sub">Çocuk uygulamalarında asıl mesele içerik kadar güven.</p>
+    <h2>What parents ask first</h2>
+    <p class="sub">In a children's app, trust matters as much as content.</p>
     <div class="grid">
       <div class="item">
-        <h3>Reklam yok</h3>
-        <p>Hiçbir reklam, hiçbir dış bağlantı. Çocuk uygulamadan dışarı çıkamaz.</p>
+        <h3>No ads</h3>
+        <p>No advertising and no outside links. Your child cannot leave the app.</p>
       </div>
       <div class="item">
-        <h3>Veri toplamıyoruz</h3>
-        <p>Hesap yok, kayıt yok. İlerleme yalnızca telefonda durur.</p>
+        <h3>No data collected</h3>
+        <p>No account, no sign-up. Progress stays on the device and nowhere else.</p>
       </div>
       <div class="item">
-        <h3>Çevrimdışı çalışır</h3>
-        <p>Yolda, uçakta, internetsiz evde — her şey cihazın içinde.</p>
+        <h3>Works offline</h3>
+        <p>In the car, on a plane, at home without internet — everything is on the device.</p>
       </div>
       <div class="item">
-        <h3>Süre sizin elinizde</h3>
-        <p>Günlük 15, 20 veya 30 dakika. Süre bitince Tobi günü tatlılıkla kapatır.</p>
+        <h3>You set the time</h3>
+        <p>15, 20 or 30 minutes a day. When time is up, Tobi gently ends the day.</p>
       </div>
     </div>
   </div>
@@ -242,30 +242,30 @@
 
 <div class="wrap">
   <section class="closing">
-    <h2>Çıktığında ilk siz haberdar olun</h2>
-    <p class="lede">E-postanızı bırakın, mağazalarda yayına girdiği gün tek bir mail gönderelim.</p>
+    <h2>Be the first to know</h2>
+    <p class="lede">Leave your email and we'll send a single message the day it lands in the stores.</p>
     <div class="signup" id="signup-bottom">
       <form action="https://formspree.io/f/mnpqnbbk" method="POST">
-        <input type="email" name="email" placeholder="e-posta adresiniz" required aria-label="E-posta adresiniz">
-        <input type="hidden" name="_subject" value="Tobi waitlist kaydı">
-        <button type="submit">Çıkınca Haber Ver</button>
+        <input type="email" name="email" placeholder="your email address" required aria-label="Your email address">
+        <input type="hidden" name="_subject" value="Tobi waitlist signup (EN)">
+        <button type="submit">Tell Me When It's Out</button>
       </form>
-      <p class="fineprint">Tek bir çıkış duyurusu. Başka mail yok, kimseyle paylaşmıyoruz.</p>
-      <p class="err" role="alert">Kayıt gönderilemedi. Bağlantınızı kontrol edip tekrar deneyin.</p>
-      <div class="thanks" role="status">Listeye eklendiniz! Tobi yayına girdiği gün haber vereceğiz.</div>
+      <p class="fineprint">One launch email. Nothing else, and we never share your address.</p>
+      <p class="err" role="alert">That didn't go through. Check your connection and try again.</p>
+      <div class="thanks" role="status">You're on the list! We'll email you the day Tobi goes live.</div>
     </div>
   </section>
 
   <footer>
-    <a href="index.html">Gizlilik Politikası</a>
-    <a href="terms.html">Kullanım Koşulları</a>
+    <a href="index.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
     <span>© 2026 SuBuSoft</span>
   </footer>
 </div>
 
 <script>
-  // Progressive enhancement: JS kapalıyken formlar normal POST ile çalışır
-  // (Formspree'nin kendi teşekkür sayfasına gider). JS varsa sayfada kalırız.
+  // Progressive enhancement: with JS off the forms still POST normally
+  // (Formspree shows its own thank-you page). With JS we stay on the page.
   document.querySelectorAll('.signup').forEach(function (box) {
     var form = box.querySelector('form');
     form.addEventListener('submit', function (e) {
@@ -274,7 +274,7 @@
       var btn = form.querySelector('button');
       var label = btn.textContent;
       btn.disabled = true;
-      btn.textContent = 'Gönderiliyor…';
+      btn.textContent = 'Sending…';
       fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
