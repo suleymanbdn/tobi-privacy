@@ -7,7 +7,7 @@
 <meta name="description" content="3-6 yaş için İngilizce öğrenme uygulaması. Kelime kartları, oyunlar, şarkılar ve hikâyeler. Reklamsız, çevrimdışı, kişisel veri toplamaz. Çıktığında ilk siz haberdar olun.">
 <meta property="og:title" content="Tobi — Çocuğunuz İngilizce'yi oyunla öğrensin">
 <meta property="og:description" content="Kelime kartları, oyunlar, şarkılar ve hikâyeler. Reklamsız ve çevrimdışı. Çıkışta haber verelim.">
-<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/shot-home.webp">
+<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/og-tr.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FDF4DC">
 <link rel="icon" href="tobi.png">
@@ -130,6 +130,9 @@
   figure { margin: 0; }
   figure img {
     width: 100%; height: auto; display: block;
+    /* Portrait phone screens: without a cap a single column on a phone
+       would be three screens tall. */
+    max-width: 340px; margin: 0 auto;
     border: 3px solid var(--ink);
     border-radius: 18px;
     background: var(--card);
@@ -200,15 +203,15 @@
     <p class="sub">Kelime kartları, mini oyunlar, her ünitede bir şarkı ve resimli hikâyeler — hepsi seslendirilmiş.</p>
     <div class="shots">
       <figure>
-        <img src="shot-home.webp" alt="Tobi ana ekranı: renkli ünite kartları ve maskot" loading="lazy" width="1100" height="506">
-        <figcaption>Ünite ünite ilerler<small>Her ünite kendi patikası: kartlar, oyunlar, şarkı</small></figcaption>
+        <img src="shot-path.webp" alt="Öğrenme patikası: bitmiş adımlar, yıldızlar ve yolun kenarında kazanılmış bir çıkartma" loading="lazy" width="720" height="1454">
+        <figcaption>Adım adım bir yol<small>Kartlar, oyunlar ve şarkılar; kazandığı çıkartmalar yolunda durur</small></figcaption>
       </figure>
       <figure>
-        <img src="shot-song.webp" alt="Şarkı ekranı: kelimeler söylenirken sırayla parlıyor" loading="lazy" width="1100" height="506">
+        <img src="shot-song.webp" alt="Şarkı ekranı: kelimeler söylenirken sırayla parlıyor" loading="lazy" width="720" height="1454">
         <figcaption>Şarkıyla pekişir<small>Kelime söylenirken ekranda parlar</small></figcaption>
       </figure>
       <figure>
-        <img src="shot-panel.webp" alt="Ebeveyn paneli: haftalık kelimeler, oyun süresi ve günlük limit" loading="lazy" width="1100" height="506">
+        <img src="shot-panel.webp" alt="Ebeveyn paneli: günlük oyun süresi ve seçilen süre limiti" loading="lazy" width="720" height="1454">
         <figcaption>Kontrol sizde<small>Günlük süre limiti ve haftalık ilerleme</small></figcaption>
       </figure>
     </div>

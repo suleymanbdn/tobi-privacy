@@ -7,7 +7,7 @@
 <meta name="description" content="An English learning app for ages 3-6. Word cards, games, songs and stories. No ads, works offline, collects no personal data. Be the first to know when it launches.">
 <meta property="og:title" content="Tobi — Let your child learn English through play">
 <meta property="og:description" content="Word cards, games, songs and stories. No ads and fully offline. We'll tell you when it lands.">
-<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/shot-home-en.webp">
+<meta property="og:image" content="https://suleymanbdn.github.io/tobi-privacy/og-en.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FDF4DC">
 <link rel="icon" href="tobi.png">
@@ -130,6 +130,9 @@
   figure { margin: 0; }
   figure img {
     width: 100%; height: auto; display: block;
+    /* Portrait phone screens: without a cap a single column on a phone
+       would be three screens tall. */
+    max-width: 340px; margin: 0 auto;
     border: 3px solid var(--ink);
     border-radius: 18px;
     background: var(--card);
@@ -200,15 +203,15 @@
     <p class="sub">Word cards, mini games, a song in every unit and picture stories — every one of them narrated.</p>
     <div class="shots">
       <figure>
-        <img src="shot-home-en.webp" alt="Tobi home screen with colourful unit cards and the mascot" loading="lazy" width="1100" height="506">
-        <figcaption>One unit at a time<small>Each unit is its own path: cards, games, a song</small></figcaption>
+        <img src="shot-path.webp" alt="The learning path: finished steps, stars and a sticker earned along the way" loading="lazy" width="720" height="1454">
+        <figcaption>One step at a time<small>Cards, games and songs — the stickers they earn stay on their path</small></figcaption>
       </figure>
       <figure>
-        <img src="shot-song-en.webp" alt="Song screen where each word lights up as it is sung" loading="lazy" width="1100" height="506">
+        <img src="shot-song.webp" alt="Song screen where each word lights up as it is sung" loading="lazy" width="720" height="1454">
         <figcaption>Songs make it stick<small>Words light up on screen as they are sung</small></figcaption>
       </figure>
       <figure>
-        <img src="shot-panel-en.webp" alt="Parent dashboard showing weekly words, play time and the daily limit" loading="lazy" width="1100" height="506">
+        <img src="shot-panel-en.webp" alt="Parent dashboard showing daily play time and the chosen time limit" loading="lazy" width="720" height="1454">
         <figcaption>You stay in control<small>Daily time limit and weekly progress</small></figcaption>
       </figure>
     </div>
